@@ -5,11 +5,11 @@ body {
 section {
   display: flex;
   min-height: 100vh;
-  background-image: url("/portfolioimgs/headerBg2.svg");
+  background-image: url("/portfolioimgs/bg.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-color: #fff;
   flex-direction: column;
+  width: 100%;
 }
 
 header {
@@ -32,13 +32,12 @@ header {
   align-items: center;
   text-align: center;
   color: #6070ff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
-nav {
+.onion {
   margin-left: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .headline1 {
@@ -47,7 +46,7 @@ nav {
   height: 150px;
   margin-left: 24px;
   margin-top: 114px;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
