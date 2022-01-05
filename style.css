@@ -1,8 +1,8 @@
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Poppins", sans-serif;
 }
 
-main {
+section {
   display: flex;
   min-height: 100vh;
   background-image: url("/portfolioimgs/headerBg2.svg");
@@ -23,7 +23,7 @@ header {
   height: 20px;
   margin-left: 12px;
   margin-top: 10px;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -37,7 +37,7 @@ header {
   flex-grow: 0;
 }
 
-.onion {
+nav {
   margin-left: auto;
 }
 
@@ -86,4 +86,8 @@ header {
   margin-left: 20px;
   width: 12.5em;
   height: auto;
+}
+
+a {
+  text-decoration: none;
 }
