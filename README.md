@@ -66,4 +66,4 @@ All source code files are licensed under the permissive MIT license
 
 ## Author
 
-- **Oustani Loukmane** - [L2oukmane](https://github.com/L2oukmane/Portfolio)
+- **Oustani Loukmane** - [github](https://github.com/L2oukmane), [twitter](https://twitter.com/LoukmaneOustani), [linkedin](https://www.linkedin.com/in/loukmane-oustani-221668211/)

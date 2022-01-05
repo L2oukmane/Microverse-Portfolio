@@ -81,12 +81,28 @@ header {
   color: #7f8cff;
 }
 
-.socialimgs {
-  margin-left: 20px;
-  width: 12.5em;
-  height: auto;
-}
-
 a {
   text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.box {
+  display: flex;
+  padding-left: 24px;
+  margin-left: -3px;
+}
+
+.socialMedia {
+  width: 10%;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}
+
+.socials img {
+  width: 20px;
+  height: 20px;
 }
