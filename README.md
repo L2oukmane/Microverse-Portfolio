@@ -3,6 +3,12 @@
 > This is a Mobile View Portfolio Skeleton
 
 ![screenshot](portfolioimgs/portfolio.png)
+![screenshot](portfolioimgs/screen1.png)
+![screenshot](portfolioimgs/screen2.png)
+![screenshot](portfolioimgs/screen3.png)
+![screenshot](portfolioimgs/screen4.png)
+![screenshot](portfolioimgs/screen5.png)
+![screenshot](portfolioimgs/screen6.png)
 
 My goal here is to Build a personal portfolio site from scratch.
 

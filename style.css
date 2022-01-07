@@ -1,10 +1,17 @@
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
-section {
+.container {
+  overflow-x: hidden;
+  width: 105%;
+  margin-left: -8px;
+}
+
+#main {
   display: flex;
-  min-height: 100vh;
+  min-height: 80vh;
   background-image: url("portfolioimgs/bg.png");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -73,7 +80,19 @@ header {
   position: static;
   width: 117px;
   height: 24px;
-  margin-left: 20px;
+  margin-left: 25px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
+.contact2 {
+  position: static;
+  width: 117px;
+  height: 24px;
+  margin-left: 40px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -92,7 +111,13 @@ ul {
 .box {
   display: flex;
   padding-left: 24px;
-  margin-left: -3px;
+  margin-left: 7px;
+}
+
+.box2 {
+  display: flex;
+  padding-left: 24px;
+  margin-left: 20px;
 }
 
 .socialMedia {
@@ -102,7 +127,332 @@ ul {
   padding: 2px;
 }
 
-.socials img {
+.socialMedia img {
   width: 20px;
   height: 20px;
+}
+
+.img1 {
+  position: static;
+  width: 295px;
+  height: 220px;
+  margin-left: 16px;
+  margin-top: 16px;
+}
+
+#workProjects {
+  margin-top: 5px;
+  height: 100%;
+  background: #f7f7f9;
+  padding-top: 50px;
+  width: 100%;
+  padding-bottom: 80px;
+}
+
+.work {
+  display: flex;
+  border: 1px solid #dfe1e6;
+  box-sizing: border-box;
+  border-radius: 16px;
+  position: static;
+  width: 327px;
+  height: 640px;
+  background: #fff;
+  flex-direction: column;
+}
+
+.work h1 {
+  margin-left: 20px;
+  margin-right: auto;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1px;
+  color: #172b4d;
+}
+
+.multi {
+  width: 300px;
+  line-height: 80px;
+}
+
+.work h3 {
+  color: #344563;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 4px;
+  position: static;
+  width: 35px;
+  height: 16px;
+  margin-left: 20px;
+}
+
+.canopy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cards > li {
+  margin-top: -9px;
+}
+
+.info {
+  margin-right: 10px;
+  margin-bottom: 4px;
+  color: #7a869a;
+  width: 125px;
+}
+
+.info::before {
+  content: url("portfolioimgs/Counter.png");
+  width: 1px;
+  height: 2px;
+  margin-right: 9px;
+}
+
+.description {
+  width: 295px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.work p {
+  margin-left: 20px;
+}
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+  margin-right: 12%;
+  margin-left: auto;
+  gap: 70px;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  color: #6070ff;
+}
+
+.tools p {
+  width: auto;
+  border: 2px solid #ebebff;
+  background-color: #ebebff;
+  background-size: 100%;
+  padding: 7px;
+  border-radius: 16px;
+  font-size: 12px;
+}
+
+.view-project button {
+  border: 2px solid #396df2;
+  background-color: transparent;
+  background-size: 100%;
+  padding-bottom: 10px;
+  padding-top: 8px;
+  border-radius: 10px;
+  width: 130px;
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: #396df2;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.resume button {
+  border: 2px solid #396df2;
+  background-color: transparent;
+  background-size: 100%;
+  padding-bottom: 10px;
+  padding-top: 8px;
+  border-radius: 10px;
+  width: 145px;
+  height: 40px;
+  margin-left: 40px;
+  color: #396df2;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.view-project button:active {
+  background-color: #396df2;
+  color: #fff;
+}
+
+.view-project button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.about-section {
+  background-color: #fff;
+  border-radius: 0 76px 0 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.about h1 {
+  margin-bottom: 27px;
+  color: #172b4d;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  width: 100px;
+}
+
+.text2 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  width: 19em;
+  margin-left: 40px;
+}
+
+.aboutMySelf {
+  margin-left: 40px;
+}
+
+.resume {
+  color: #396df2;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.resume button:active {
+  background-color: #396df2;
+  color: #fff;
+}
+
+.resume button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.languages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.languages li {
+  margin-left: 20px;
+  color: #000;
+}
+
+.scrollDown {
+  height: 10px;
+  width: 17px;
+  margin-left: 140px;
+}
+
+.html-css {
+  color: #253858;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.html-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #f7f7f9;
+  width: 300px;
+}
+
+.css-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 250px;
+  background-color: #f7f7f9;
+  width: 300px;
+}
+
+.html-li {
+  margin-left: 25px;
+  margin-right: auto;
+}
+
+.html {
+  margin-left: 10px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.css-li {
+  margin-left: 25px;
+  margin-right: auto;
+}
+
+.css {
+  margin-left: 10px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.Frameworks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.Frameworks li {
+  margin-left: 20px;
+  color: #000;
+}
+
+.scrollDown2 {
+  height: 17px;
+  width: 14px;
+  margin-left: 130px;
+}
+
+.Skills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Skills li {
+  margin-left: 20px;
+  color: #000;
+  margin-right: 65px;
+  margin-top: 20px;
+}
+
+.get-my-contact:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.get-my-contact:active {
+  opacity: 1;
 }
