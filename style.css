@@ -80,6 +80,18 @@ header {
   position: static;
   width: 117px;
   height: 24px;
+  margin-left: 25px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
+.contact2 {
+  position: static;
+  width: 117px;
+  height: 24px;
   margin-left: 40px;
   font-style: normal;
   font-weight: 500;
@@ -97,6 +109,12 @@ ul {
 }
 
 .box {
+  display: flex;
+  padding-left: 24px;
+  margin-left: 7px;
+}
+
+.box2 {
   display: flex;
   padding-left: 24px;
   margin-left: 20px;
@@ -209,6 +227,7 @@ ul {
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
+  color: #344563;
 }
 
 .work p {
@@ -239,41 +258,43 @@ ul {
   font-size: 12px;
 }
 
-.view-project {
-  color: #396df2;
-  font-size: 17px;
-  font-weight: bold;
-}
-
-.view-project p {
+.view-project button {
   border: 2px solid #396df2;
   background-color: transparent;
   background-size: 100%;
-  padding: 10px;
-  border-radius: 10px;
-  width: 120px;
-  height: 30px;
-  padding-left: 25px;
-}
-
-.resume p {
-  border: 2px solid #396df2;
-  background-color: transparent;
-  background-size: 100%;
-  padding: 10px;
+  padding-bottom: 10px;
+  padding-top: 8px;
   border-radius: 10px;
   width: 130px;
-  height: 30px;
-  padding-left: 10px;
-  margin-left: 40px;
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: #396df2;
+  font-size: 17px;
+  font-weight: normal;
 }
 
-.view-project p:active {
+.resume button {
+  border: 2px solid #396df2;
+  background-color: transparent;
+  background-size: 100%;
+  padding-bottom: 10px;
+  padding-top: 8px;
+  border-radius: 10px;
+  width: 145px;
+  height: 40px;
+  margin-left: 40px;
+  color: #396df2;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.view-project button:active {
   background-color: #396df2;
   color: #fff;
 }
 
-.view-project p:hover {
+.view-project button:hover {
   opacity: 0.7;
   cursor: pointer;
 }
@@ -283,7 +304,7 @@ ul {
   border-radius: 0 76px 0 0;
   display: flex;
   flex-direction: column;
-  padding-top: 80px;
+  padding-top: 50px;
 }
 
 .about h1 {
@@ -294,6 +315,7 @@ ul {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
+  width: 100px;
 }
 
 .text2 {
@@ -316,12 +338,12 @@ ul {
   font-weight: bold;
 }
 
-.resume p:active {
+.resume button:active {
   background-color: #396df2;
   color: #fff;
 }
 
-.resume p:hover {
+.resume button:hover {
   opacity: 0.7;
   cursor: pointer;
 }
@@ -330,10 +352,11 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 50px;
 }
 
-.languages h4 {
-  margin-left: 40px;
+.languages li {
+  margin-left: 20px;
   color: #000;
 }
 
@@ -398,10 +421,11 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 35px;
 }
 
-.Frameworks h4 {
-  margin-left: 40px;
+.Frameworks li {
+  margin-left: 20px;
   color: #000;
 }
 
@@ -417,8 +441,18 @@ ul {
   align-items: center;
 }
 
-.Skills h4 {
-  margin-left: 40px;
+.Skills li {
+  margin-left: 20px;
   color: #000;
   margin-right: 65px;
+  margin-top: 20px;
+}
+
+.get-my-contact:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.get-my-contact:active {
+  opacity: 1;
 }
