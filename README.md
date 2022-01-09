@@ -1,14 +1,6 @@
-# Hello-Microverse
+# SpaceWeb
 
-> This is a Mobile View Portfolio Skeleton
-
-![screenshot](portfolioimgs/portfolio.png)
-![screenshot](portfolioimgs/screen1.png)
-![screenshot](portfolioimgs/screen2.png)
-![screenshot](portfolioimgs/screen3.png)
-![screenshot](portfolioimgs/screen4.png)
-![screenshot](portfolioimgs/screen5.png)
-![screenshot](portfolioimgs/screen6.png)
+> This is a free download tools, web needs and software.
 
 My goal here is to Build a personal portfolio site from scratch.
 
@@ -33,7 +25,7 @@ The basic requirements for building the executable are:
 #### Cloning the project
 
 ```
-git clone  https://github.com/L2oukmane/Portfolio <Your-Build-Directory>
+git clone  https://github.com/L2oukmane/SpaceWeb <Your-Build-Directory>
 ```
 
 ## Getting packages and debuging with Stylelint
