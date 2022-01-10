@@ -243,9 +243,8 @@ ul {
 }
 
 .tools {
-  display: flex;
-  align-items: center;
   color: #6070ff;
+  margin: 0 auto;
 }
 
 .tools p {
@@ -256,6 +255,18 @@ ul {
   padding: 7px;
   border-radius: 16px;
   font-size: 12px;
+}
+
+.tool-1 {
+  float: left;
+}
+
+.tool-2 {
+  float: left;
+}
+
+.tool-3 {
+  float: right;
 }
 
 .view-project button {
