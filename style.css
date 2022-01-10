@@ -245,6 +245,8 @@ ul {
 .tools {
   color: #6070ff;
   margin: 0 auto;
+  float: left;
+  padding-right: 100px;
 }
 
 .tools p {
@@ -268,7 +270,6 @@ ul {
 .tool-3 {
   float: right;
 }
-
 .view-project button {
   border: 2px solid #396df2;
   background-color: transparent;
