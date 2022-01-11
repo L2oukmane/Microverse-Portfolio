@@ -456,3 +456,10 @@ ul {
 .get-my-contact:active {
   opacity: 1;
 }
+
+.contact-me {
+  background: url("portfolioimgs/Contact-me.svg");
+  width: 375px;
+  height: 779px;
+  margin-top: 114px;
+}
