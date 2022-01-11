@@ -266,16 +266,13 @@
       </section>
 
       <section class="contact-me">
-        <section>
-          <h5 class="h5">contact me</h5>
+          <h5 class="section-header">Contact me</h5>
           <p class="text-contact">
             If you have an application you are interested in developing, a
             feature that you need built or a project that needs coding. I’d love
             to help with it
           </p>
-        </section>
-        <section>
-          <form action="">
+          <form>
             <input
               type="text"
               name="name"
@@ -283,6 +280,7 @@
               required
               size="30"
               placeholder="Name"
+              maxlength="10"
             />
             <input
               type="email"
@@ -298,13 +296,14 @@
               cols="30"
               rows="10"
               placeholder="Write you r message here"
-              size="200"
+            
+              maxlength="500"
             ></textarea>
             <div class="contact-btn">
               <button type="button">Get in touch</button>
             </div>
           </form>
-        </section>
+        
       </section>
     </div>
   </body>

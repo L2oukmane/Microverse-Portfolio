@@ -289,6 +289,21 @@ ul {
   font-weight: normal;
 }
 
+.contact-btn button {
+  width: 40%;
+  height: 40px;
+  border: 1px solid #dfe1e6;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #6070ff;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
 .view-project button:active {
   background-color: #396df2;
   color: #fff;
@@ -463,8 +478,6 @@ ul {
   height: 779px;
   margin-top: 114px;
   background-repeat: no-repeat;
-}
-.contact-me {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -472,7 +485,7 @@ ul {
   justify-content: space-evenly;
 }
 
-.h5 {
+.contact-me .section-header {
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -480,8 +493,7 @@ ul {
   font-size: 40px;
   line-height: 52px;
   color: #fff;
-  padding-top: 40px;
-  margin-bottom: 10px;
+  margin-bottom: -52px;
 }
 
 .text-contact {
@@ -491,14 +503,14 @@ ul {
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
+  margin-bottom: 50px;
 }
 
 textarea {
   width: 320px;
   height: 100px;
-  border: 1px solid #dfe1e6;
+  border: 1px solid #b3bac5;
   border-radius: 8px;
-
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -523,22 +535,16 @@ input {
   font-style: normal;
   margin-bottom: 20px;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 20px;
-  color: #6070ff;
+  color: #172b4d;
 }
 
-.contact-btn button {
-  width: 40%;
-  height: 40px;
-  border: 1px solid #dfe1e6;
-  border-radius: 8px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #6070ff;
-  margin-top: 20px;
-  cursor: pointer;
+.contact-btn button:hover {
+  opacity: 0.7;
+}
+
+.contact-btn button:active {
+  background: #6070ff;
+  color: #fff;
 }
