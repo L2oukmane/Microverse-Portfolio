@@ -548,13 +548,24 @@ input {
   color: #fff;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991.9px) {
   .desktop-nav-bar {
     display: none;
   }
 }
 
+@media screen and (max-width: 991px) {
+  .js-container {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 992px) {
+  body {
+    overflow-x: hidden;
+    margin-left: -5px;
+  }
+
   #main {
     background-image: url("portfolioimgs/bg2.svg");
     background-size: 100%;
@@ -637,13 +648,13 @@ input {
     display: flex;
     flex-direction: row;
     width: 790px;
-    height: 390px;
+    height: 320px;
     margin-left: 100px;
   }
 
   .img1 {
     padding: 0;
-    height: 370px;
+    height: 300px;
     width: 350px;
     margin-top: 10px;
   }
@@ -665,9 +676,14 @@ input {
   }
 
   .work-descreption {
-    margin-top: 40px;
-    margin-bottom: 35px;
-    height: 290px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    height: 100px;
+  }
+
+  .view-project button {
+    height: 39px;
+    width: 150px;
   }
 
   .description {
@@ -677,11 +693,7 @@ input {
   }
 
   .canopy {
-    height: 20px;
-  }
-
-  .tonic-class .multi {
-    margin-bottom: 28px;
+    height: 15px;
   }
 
   .about-section {
@@ -722,15 +734,64 @@ input {
   }
 
   .html-css {
+    display: flex;
+    flex-direction: row;
     margin-bottom: 30px;
+    align-items: center;
+  }
+
+  .js-container {
+    display: flex;
+    flex-direction: column;
+    width: 122px;
+    height: 120px;
+    background-color: #f7f7f9;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+
+  .js {
+    height: 48px;
+    width: 48px;
+    margin-left: 12px;
+    margin-top: 12px;
+    margin-bottom: 17px;
+  }
+
+  .js-li {
+    margin-left: 15px;
   }
 
   .html-container {
-    width: 400px;
+    display: flex;
+    flex-direction: column;
+    width: 122px;
+    height: 120px;
+  }
+
+  .html {
+    height: 48px;
+    width: 48px;
+    margin-left: -29px;
+    margin-top: -12px;
+    margin-bottom: 17px;
   }
 
   .css-container {
-    width: 400px;
+    display: flex;
+    flex-direction: column;
+    width: 122px;
+    height: 120px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+
+  .css {
+    height: 48px;
+    width: 48px;
+    margin-bottom: 17px;
+    margin-left: -29px;
+    margin-top: -12px;
   }
 
   .languages li {
@@ -749,7 +810,7 @@ input {
   .contact-me {
     background-image: url("portfolioimgs/Contact-me2.svg");
     background-color: #6070ff;
-    background-size: 100%;
+    background-size: 97%;
     min-width: 100%;
     background-repeat: no-repeat;
     min-height: 100%;
