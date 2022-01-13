@@ -548,6 +548,10 @@ input {
   color: #fff;
 }
 
+img:hover {
+  transform: scale(1.4, 1.2);
+}
+
 @media screen and (max-width: 991.9px) {
   .desktop-nav-bar {
     display: none;
