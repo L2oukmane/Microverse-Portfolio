@@ -9,19 +9,11 @@ body {
   margin-left: -8px;
 }
 
-#main {
-  display: flex;
-  min-height: 80vh;
-  background-image: url("portfolioimgs/bg.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  flex-direction: column;
-  width: 100%;
-}
-
 header {
   display: flex;
   margin: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
@@ -35,8 +27,6 @@ header {
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
-  display: flex;
-  align-items: center;
   text-align: center;
   color: #6070ff;
 }
@@ -45,6 +35,15 @@ header {
   margin-left: auto;
   justify-content: center;
   align-items: center;
+}
+
+#main {
+  display: flex;
+  min-height: 80vh;
+  background-image: url("portfolioimgs/bg.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  flex-direction: column;
 }
 
 .headline1 {
@@ -214,7 +213,7 @@ ul {
 }
 
 .info::before {
-  content: url("portfolioimgs/Counter.png");
+  content: url("portfolioimgs/Counter.svg");
   width: 1px;
   height: 2px;
   margin-right: 9px;
@@ -547,4 +546,288 @@ input {
 .contact-btn button:active {
   background: #6070ff;
   color: #fff;
+}
+
+@media screen and (max-width: 991.9px) {
+  .desktop-nav-bar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .js-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    overflow-x: hidden;
+    margin-left: -5px;
+  }
+
+  #main {
+    background-image: url("portfolioimgs/bg2.svg");
+    background-size: 100%;
+    position: static;
+    min-height: 52vh;
+  }
+
+  header {
+    margin-left: 7%;
+    margin-top: 5px;
+  }
+
+  .onion {
+    display: none;
+  }
+
+  .container {
+    overflow-x: hidden;
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .grid-container {
+    overflow-x: hidden;
+  }
+
+  .headline1 {
+    font-size: 40px;
+    line-height: 50px;
+    width: 350px;
+    margin-bottom: 5px;
+    margin-top: 15%;
+    margin-left: 16%;
+  }
+
+  .text {
+    width: 600px;
+    font-size: 17px;
+    line-height: 23px;
+    height: 70px;
+    margin-left: 16%;
+  }
+
+  .box {
+    width: 33%;
+    margin-left: 13%;
+    margin-bottom: 70px;
+  }
+
+  .contact {
+    margin-left: 16%;
+    margin-bottom: 0;
+  }
+
+  .desktop-nav-bar {
+    width: 71%;
+    margin-left: auto;
+  }
+
+  .desktop-nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 190px;
+  }
+
+  .nav-li {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+    margin-right: 25px;
+  }
+
+  .work {
+    display: flex;
+    flex-direction: row;
+    width: 790px;
+    height: 320px;
+    margin-left: 100px;
+  }
+
+  .img1 {
+    padding: 0;
+    height: 300px;
+    width: 350px;
+    margin-top: 10px;
+  }
+
+  .work2 {
+    flex-direction: row-reverse;
+  }
+
+  .work2 .img1 {
+    margin-right: 40px;
+  }
+
+  .work4 {
+    flex-direction: row-reverse;
+  }
+
+  .work4 .img1 {
+    margin-right: 40px;
+  }
+
+  .work-descreption {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    height: 100px;
+  }
+
+  .view-project button {
+    height: 39px;
+    width: 150px;
+  }
+
+  .description {
+    font-size: 15px;
+    line-height: 20px;
+    width: 350px;
+  }
+
+  .canopy {
+    height: 15px;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: row;
+    width: 790px;
+  }
+
+  .about {
+    width: 310px;
+    height: 350px;
+    margin-right: 90px;
+    margin-left: 120px;
+  }
+
+  .text2 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 35px;
+    width: 380px;
+    height: 100px;
+    margin-bottom: 25px;
+  }
+
+  .about h1 {
+    color: #172b4d;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 37px;
+    width: 85px;
+    margin-bottom: 45px;
+  }
+
+  .skills-section {
+    width: 100%;
+  }
+
+  .html-css {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+
+  .js-container {
+    display: flex;
+    flex-direction: column;
+    width: 122px;
+    height: 120px;
+    background-color: #f7f7f9;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+
+  .js {
+    height: 48px;
+    width: 48px;
+    margin-left: 12px;
+    margin-top: 12px;
+    margin-bottom: 17px;
+  }
+
+  .js-li {
+    margin-left: 15px;
+  }
+
+  .html-container {
+    display: flex;
+    flex-direction: column;
+    width: 122px;
+    height: 120px;
+  }
+
+  .html {
+    height: 48px;
+    width: 48px;
+    margin-left: -29px;
+    margin-top: -12px;
+    margin-bottom: 17px;
+  }
+
+  .css-container {
+    display: flex;
+    flex-direction: column;
+    width: 122px;
+    height: 120px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+
+  .css {
+    height: 48px;
+    width: 48px;
+    margin-bottom: 17px;
+    margin-left: -29px;
+    margin-top: -12px;
+  }
+
+  .languages li {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .Frameworks li {
+    width: 210px;
+  }
+
+  .Skills li {
+    width: 147px;
+  }
+
+  .contact-me {
+    background-image: url("portfolioimgs/Contact-me2.svg");
+    background-color: #6070ff;
+    background-size: 97%;
+    min-width: 100%;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    border-radius: 70px 0 0 0;
+  }
+
+  .contact-me .text-contact {
+    width: 500px;
+    height: 40px;
+    margin-bottom: 0;
+  }
+
+  .contact-me .message {
+    width: 400px;
+  }
+
+  .contact-me button {
+    margin-left: 30%;
+  }
 }
