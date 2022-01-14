@@ -537,6 +537,7 @@ input {
   font-size: 17px;
   line-height: 20px;
   color: #172b4d;
+  animation: rotation 2s;
 }
 
 input:hover {
@@ -545,6 +546,12 @@ input:hover {
 
 textarea:hover {
   transform: translate(20px, 10px);
+}
+
+@keyframes rotation {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .contact-btn button:hover {
@@ -559,7 +566,6 @@ textarea:hover {
 img:hover {
   transform: scale(1.4, 1.2);
 }
-
 
 @media screen and (max-width: 991.9px) {
   .desktop-nav-bar {
