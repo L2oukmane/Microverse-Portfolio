@@ -29,6 +29,13 @@ header {
   line-height: 20px;
   text-align: center;
   color: #6070ff;
+  animation: rotation 2s;
+}
+
+@keyframes rotation {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .onion {
@@ -539,6 +546,14 @@ input {
   color: #172b4d;
 }
 
+input:hover {
+  transform: translate(20px, 10px);
+}
+
+textarea:hover {
+  transform: translate(20px, 10px);
+}
+
 .contact-btn button:hover {
   opacity: 0.7;
 }
@@ -546,6 +561,10 @@ input {
 .contact-btn button:active {
   background: #6070ff;
   color: #fff;
+}
+
+img:hover {
+  transform: scale(1.4, 1.2);
 }
 
 @media screen and (max-width: 991.9px) {
