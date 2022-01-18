@@ -546,14 +546,6 @@ input {
   color: #172b4d;
 }
 
-input:hover {
-  transform: translate(20px, 10px);
-}
-
-textarea:hover {
-  transform: translate(20px, 10px);
-}
-
 .contact-btn button:hover {
   opacity: 0.7;
 }
@@ -561,10 +553,6 @@ textarea:hover {
 .contact-btn button:active {
   background: #6070ff;
   color: #fff;
-}
-
-img:hover {
-  transform: scale(1.4, 1.2);
 }
 
 @media screen and (max-width: 991.9px) {
@@ -848,5 +836,17 @@ img:hover {
 
   .contact-me button {
     margin-left: 30%;
+  }
+
+  input:hover {
+    transform: translate(20px, 10px);
+  }
+
+  textarea:hover {
+    transform: translate(20px, 10px);
+  }
+
+  img:hover {
+    transform: scale(1.4, 1.2);
   }
 }
