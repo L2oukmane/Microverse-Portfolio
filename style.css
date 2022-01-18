@@ -847,6 +847,6 @@ input {
   }
 
   img:hover {
-    transform: scale(1.4, 1.2);
+    transform: scale(1.2, 1.1);
   }
 }
