@@ -569,7 +569,34 @@ img:hover {
 
 @media screen and (max-width: 991.9px) {
   .desktop-nav-bar {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 32px;
+    font-weight: 600;
+    width: 100%;
+    inset: 0 0 0 0;
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    opacity: 0.9;
+    background-color: #6070ff;
+    padding-top: 15%;
+    backdrop-filter: blur(100px);
+    mix-blend-mode: multiply;
+  }
+
+  .desktop-nav-container > li > a {
+    color: #fff;
+    margin-bottom: 125px;
+  }
+  .desktop-nav-container > li {
+    margin-bottom: 50px;
+  }
+
+  .close-btn {
+    margin: 18px 48px 34px auto;
+    float: right;
   }
 }
 
@@ -602,6 +629,7 @@ img:hover {
   }
 
   .container {
+    display: inline;
     overflow-x: hidden;
     width: 100%;
     margin-left: 10px;
