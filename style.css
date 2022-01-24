@@ -563,13 +563,13 @@ textarea:hover {
   color: #fff;
 }
 
-img:hover {
+#workProjects img:hover {
   transform: scale(1.4, 1.2);
 }
 
 @media screen and (max-width: 991.9px) {
   .desktop-nav-bar {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: flex-start;
     font-size: 32px;
@@ -590,6 +590,7 @@ img:hover {
     color: #fff;
     margin-bottom: 125px;
   }
+
   .desktop-nav-container > li {
     margin-bottom: 50px;
   }

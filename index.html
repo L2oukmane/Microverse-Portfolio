@@ -2,15 +2,15 @@
 <html lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F1XNM8FGF2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F1XNM8FGF2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-F1XNM8FGF2');
-</script>
-    
+      gtag('config', 'G-F1XNM8FGF2');
+    </script>
+    <script src="script.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,12 +28,18 @@
       <header>
         <a class="logo" href="#">My Logo</a>
         <nav class="onion">
-          <img clas="onion-menu" src="portfolioimgs/Union.svg" alt="HamburgerIcon" />
+          <a href="javascript:void(0);" onclick="openCloseMenu()">
+            <img class="onion-menu" src="portfolioimgs/Union.svg" alt="HamburgerIcon" />
+          </a>
         </nav>
         
         <nav class = "desktop-nav-bar">
           <ul class="desktop-nav-container">
-           <li><img class="close-btn" src="portfolioimgs/close.svg" alt="closeButton"></li>
+           <li>
+             <a href="javascript:void(0);" onclick="openCloseMenu()">
+              <img class="close-btn" src="portfolioimgs/close.svg" alt="closeButton">
+            </a>
+            </li>
             <li class="nav-li">
               <a href="#Portfolio" class="desk_nav_info">Portfolio</a>
             </li>
@@ -318,6 +324,5 @@
           </form>
       </section>
     </div>
-    <script src="script.js"></script>
   </body>
 </html>
