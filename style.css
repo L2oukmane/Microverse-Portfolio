@@ -17,10 +17,11 @@ header {
 }
 
 .logo {
-  position: static;
+  position: fixed;
   width: 76px;
   height: 20px;
   margin-left: 12px;
+  margin-right: 70%;
   margin-top: 10px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -39,9 +40,13 @@ header {
 }
 
 .onion {
+  display: inline-block;
   margin-left: auto;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  margin-left: 75%;
+  margin-top: 3%;
 }
 
 #main {
