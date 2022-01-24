@@ -1,6 +1,7 @@
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  margin: 0;
 }
 
 .container {
@@ -11,25 +12,30 @@ body {
 
 header {
   display: flex;
-  margin: 20px;
-  align-items: center;
-  justify-content: center;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
 }
 
 .logo {
-  position: static;
   width: 76px;
   height: 20px;
-  margin-left: 12px;
-  margin-top: 10px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
-  text-align: center;
+  margin-left: 70px;
+  justify-self: center;
   color: #6070ff;
+  flex-grow: 1;
+}
+
+.logo-text {
   animation: rotation 2s;
+  width: fit-content;
+  padding-top: 15px;
 }
 
 @keyframes rotation {
@@ -39,9 +45,9 @@ header {
 }
 
 .onion {
-  margin-left: auto;
-  justify-content: center;
-  align-items: center;
+  padding: 8px;
+  margin: 4px;
+  margin-right: 10%;
 }
 
 #main {
@@ -122,8 +128,10 @@ ul {
 
 .box2 {
   display: flex;
+  justify-content: center;
   padding-left: 24px;
   margin-left: 20px;
+  width: 30%;
 }
 
 .socialMedia {
@@ -323,9 +331,24 @@ ul {
 .about-section {
   background-color: #fff;
   border-radius: 0 76px 0 0;
+  padding-top: 50px;
+  width: 100%;
+}
+
+.about {
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  align-items: center;
+  width: 100%;
+  align-self: center;
+}
+
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  align-self: center;
 }
 
 .about h1 {
@@ -392,7 +415,6 @@ ul {
   font-size: 15px;
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
 
 .html-container {
@@ -402,8 +424,8 @@ ul {
   align-items: center;
   margin-right: 20px;
   margin-bottom: 20px;
-  background-color: #f7f7f9;
   width: 300px;
+  background-color: #f7f7f9;
 }
 
 .css-container {
@@ -411,9 +433,8 @@ ul {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-right: 250px;
+  max-width: 300px;
   background-color: #f7f7f9;
-  width: 300px;
 }
 
 .html-li {
@@ -465,7 +486,7 @@ ul {
 .Skills li {
   margin-left: 20px;
   color: #000;
-  margin-right: 65px;
+  margin-right: 35px;
   margin-top: 20px;
 }
 
@@ -480,10 +501,11 @@ ul {
 
 .contact-me {
   background: url("portfolioimgs/Contact-me.svg");
-  width: 375px;
+  width: 100%;
   height: 779px;
   margin-top: 114px;
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -563,13 +585,41 @@ textarea:hover {
   color: #fff;
 }
 
-img:hover {
+#workProjects img:hover {
   transform: scale(1.4, 1.2);
 }
 
 @media screen and (max-width: 991.9px) {
   .desktop-nav-bar {
     display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 32px;
+    font-weight: 600;
+    width: 100%;
+    inset: 0 0 0 0;
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    opacity: 0.9;
+    background-color: #6070ff;
+    padding-top: 15%;
+    backdrop-filter: blur(100px);
+    mix-blend-mode: multiply;
+  }
+
+  .desktop-nav-container > li > a {
+    color: #fff;
+    margin-bottom: 125px;
+  }
+
+  .desktop-nav-container > li {
+    margin-bottom: 50px;
+  }
+
+  .close-btn {
+    margin: 18px 48px 34px auto;
+    float: right;
   }
 }
 
@@ -593,15 +643,19 @@ img:hover {
   }
 
   header {
-    margin-left: 7%;
-    margin-top: 5px;
+    width: 100%;
   }
 
   .onion {
     display: none;
   }
 
+  .logo {
+    margin-top: 15px;
+  }
+
   .container {
+    display: inline;
     overflow-x: hidden;
     width: 100%;
     margin-left: 10px;
@@ -641,7 +695,7 @@ img:hover {
 
   .desktop-nav-bar {
     width: 71%;
-    margin-left: auto;
+    margin-right: auto;
   }
 
   .desktop-nav-container {
@@ -652,6 +706,7 @@ img:hover {
     height: 40px;
     margin-top: 20px;
     margin-left: 190px;
+    padding-left: 130px;
   }
 
   .nav-li {

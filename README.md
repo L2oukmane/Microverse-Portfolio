@@ -57,6 +57,21 @@ npm install --save-dev hint@6.x
 npx hint .
 ```
 
+## Getting packages and debuging with Eslint
+
+```
+npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
+
+```
+
+##### For validation detection using Eslint Run
+
+```
+
+npx eslint .
+
+```
+
 ##### from parent source directory
 
 ## License
