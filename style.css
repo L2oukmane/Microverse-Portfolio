@@ -937,18 +937,18 @@ textarea:hover {
   }
 
   .popUp-container {
-    display: flex;
+    display: none;
     flex-direction: column;
     border: 1px solid #979493;
     position: fixed;
     overflow: scroll;
+    overflow-x: hidden;
     top: 55%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    flex-direction: column;
     background-color: #fff;
-    width: 50%;
+    width: 60%;
     height: 80%;
     padding: 17px 24px;
     z-index: 1;

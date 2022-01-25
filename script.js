@@ -14,53 +14,52 @@ document.getElementById('onclick-close').addEventListener('click', openCloseMenu
 document.getElementById('onclick-portfolio').addEventListener('click', openCloseMenu);
 document.getElementById('onclick-about').addEventListener('click', openCloseMenu);
 document.getElementById('onclick-contact').addEventListener('click', openCloseMenu);
-
-function createPopup(){
-  const projects = {
-    project1: {
-      heading1: 'Tonic',
-      heading2: ['Canopy','Back End Dev','2015'],
-      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      featuredImage: 'portfolioimgs/Snap1.svg',
-      languages: ['html','css','javascript'],
-      linkLive: '',
-      linkSource: ''
-    },
-    project2: {
-      heading1: 'Multi-Post Stories',
-      heading2: ['Canopy','Back End Dev','2015'],
-      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      featuredImage: 'portfolioimgs/Snap2.svg',
-      languages: ['html','css','javascript'],
-      linkLive: '',
-      linkSource: ''
-    },
-    project3: {
-      heading1: 'Tonic',
-      heading2: ['Canopy','Back End Dev','2015'],
-      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      featuredImage: 'portfolioimgs/Snap3.svg',
-      languages: ['html','css','javascript'],
-      linkLive: '',
-      linkSource: ''
-    },
-    project4: {
-      heading1: 'Multi-Post Stories',
-      heading2: ['Canopy','Back End Dev','2015'],
-      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      featuredImage: 'portfolioimgs/Snap4.svg',
-      languages: ['html','css','javascript'],
-      linkLive: '',
-      linkSource: ''
-    },
-  }
+const projects = {
+  project1: {
+    heading1: 'Tonic',
+    heading2: ['Canopy','Back End Dev','2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    featuredImage: 'portfolioimgs/Snap1.svg',
+    languages: ['html','css','javascript'],
+    linkLive: '',
+    linkSource: ''
+  },
+  project2: {
+    heading1: 'Multi-Post Stories',
+    heading2: ['Canopy','Back End Dev','2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    featuredImage: 'portfolioimgs/Snap2.svg',
+    languages: ['html','css','javascript'],
+    linkLive: '',
+    linkSource: ''
+  },
+  project3: {
+    heading1: 'Tonic',
+    heading2: ['Canopy','Back End Dev','2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    featuredImage: 'portfolioimgs/Snap3.svg',
+    languages: ['html','css','javascript'],
+    linkLive: '',
+    linkSource: ''
+  },
+  project4: {
+    heading1: 'Multi-Post Stories',
+    heading2: ['Canopy','Back End Dev','2015'],
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    featuredImage: 'portfolioimgs/Snap4.svg',
+    languages: ['html','css','javascript'],
+    linkLive: '',
+    linkSource: ''
+  },
+}
+function createProjectCards(){
   let i = 1;
   for (const project in projects){
-    popUp(projects[project],i);
+    projectCards(projects[project],i);
     i++;
   }
 }
-function popUp(project,counter){
+function projectCards(project,counter){
   let container = document.querySelector('.grid-container');
   const workList = document.createElement('li');
   workList.classList.add('work');
@@ -111,6 +110,12 @@ function popUp(project,counter){
   let viewBtn = document.createElement('button');
   viewBtn.setAttribute('type', 'button');
   viewBtn.appendChild(document.createTextNode('See Project'));
+  viewBtn.addEventListener('click', function() {
+    openClosePopup();
+    createPopUp(projects['project'+counter]);
+    console.log("test");
+  });
+  
   viewDiv.appendChild(viewBtn);
   descriptionDiv.appendChild(viewDiv);
 
@@ -118,7 +123,42 @@ function popUp(project,counter){
   workList.appendChild(descriptionDiv);
   container.appendChild(workList);
 }
-
+function openClosePopup(){
+  const x = document.querySelector('.popUp-container');
+  if (x.style.display === 'flex') {
+    x.style.display = 'none';
+  } else {
+    x.style.display = 'flex';
+  }
+}
+function createPopUp(project){
+  const title = document.getElementById('heading1');
+  title.appendChild(document.createTextNode(project.heading1));
+  const heading3 = document.getElementById('heading3');
+  heading3.appendChild(document.createTextNode(project.heading2[0]));
+  const cards = document.getElementById('cardsList');
+  let list1 = document.createElement('li');
+  let list2 = document.createElement('li');
+  list1.classList.add('info');
+  list2.classList.add('info');
+  list1.appendChild(document.createTextNode(project.heading2[1]));
+  list2.appendChild(document.createTextNode(project.heading2[2]));
+  cards.appendChild(list1);
+  cards.appendChild(list2);
+  const description = document.getElementById('description-text');
+  description.appendChild(document.createTextNode(project.description));
+  const projectTools = document.getElementById('project-tools');
+  for (let i=0;i<project.languages.length;i++){
+    const language = document.createElement('p');
+    const languageText = document.createTextNode(project.languages[i]);
+    language.appendChild(languageText);
+    projectTools.appendChild(language);
+  }
+  const liveButton = document.getElementById('live-button');
+  liveButton.setAttribute('onclick',project.linkLive);
+  const sourceButton = document.getElementById('source-button');
+  sourceButton.setAttribute('onclick',project.linkSource);
+}
 document.addEventListener('DOMContentLoaded', function() {
-  createPopup();
+  createProjectCards();
 });
