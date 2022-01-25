@@ -651,7 +651,10 @@ textarea:hover {
   }
 
   .logo {
-    margin-top: 15px;
+    margin-top: 1%;
+    margin-left: 11%;
+    font-size: 28px;
+    width: 4%;
   }
 
   .container {
@@ -666,20 +669,22 @@ textarea:hover {
   }
 
   .headline1 {
-    font-size: 40px;
+    font-size: 55px;
     line-height: 50px;
-    width: 350px;
-    margin-bottom: 5px;
+    width: 25%;
+    margin-bottom: 15px;
     margin-top: 15%;
-    margin-left: 16%;
+    margin-left: 14%;
   }
 
   .text {
-    width: 600px;
-    font-size: 17px;
-    line-height: 23px;
-    height: 70px;
-    margin-left: 16%;
+    width: 30%;
+    font-size: 23px;
+    line-height: 30px;
+    height: 100px;
+    margin-left: 14%;
+
+    margin-bottom: 45px;
   }
 
   .box {
@@ -689,7 +694,7 @@ textarea:hover {
   }
 
   .contact {
-    margin-left: 16%;
+    margin-left: 14%;
     margin-bottom: 0;
   }
 
@@ -704,18 +709,18 @@ textarea:hover {
     justify-content: center;
     align-items: center;
     height: 40px;
-    margin-top: 20px;
-    margin-left: 190px;
+    margin-top: 2%;
+    margin-left: 30%;
     padding-left: 130px;
   }
 
   .nav-li {
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 22px;
     line-height: 20px;
     color: #344563;
-    margin-right: 25px;
+    margin-left: 5em;
   }
 
   .work {
@@ -773,22 +778,27 @@ textarea:hover {
   .about-section {
     display: flex;
     flex-direction: row;
-    width: 790px;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
   }
 
   .about {
-    width: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
     height: 350px;
-    margin-right: 90px;
-    margin-left: 120px;
+    margin-left: 14%;
   }
 
   .text2 {
-    font-size: 16px;
-    line-height: 24px;
-    margin-left: 35px;
-    width: 380px;
-    height: 100px;
+    font-size: 22px;
+    line-height: 30px;
+    align-self: flex-start;
+    margin-left: 14%;
+    width: 80%;
     margin-bottom: 25px;
   }
 
@@ -797,14 +807,31 @@ textarea:hover {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 35px;
-    line-height: 37px;
-    width: 85px;
+    font-size: 55px;
+    line-height: 52px;
+    margin-left: 13%;
+    align-self: flex-start;
     margin-bottom: 45px;
   }
 
+  .contact2 {
+    align-self: flex-start;
+    margin-left: 14%;
+  }
+
+  .box2 {
+    align-self: flex-start;
+    width: 50%;
+    margin-left: 0;
+  }
+
+  .resume {
+    align-self: flex-start;
+    margin-left: 8%;
+  }
+
   .skills-section {
-    width: 100%;
+    width: 50%;
   }
 
   .html-css {
@@ -812,6 +839,8 @@ textarea:hover {
     flex-direction: row;
     margin-bottom: 30px;
     align-items: center;
+    width: 100%;
+    margin-left: 95%;
   }
 
   .js-container {
@@ -871,14 +900,17 @@ textarea:hover {
   .languages li {
     width: 200px;
     margin-bottom: 20px;
+    margin-left: 50%;
   }
 
   .Frameworks li {
-    width: 210px;
+    width: 100%;
+    margin-left: 50%;
   }
 
   .Skills li {
-    width: 147px;
+    width: 100%;
+    margin-left: 50%;
   }
 
   .contact-me {
