@@ -21,7 +21,7 @@ const projects = {
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredImage: 'portfolioimgs/Snap1.svg',
     languages: ['html','css','javascript'],
-    linkLive: '',
+    linkLive: 'location.href=\'https://l2oukmane.github.io/Portfolio/index.html\'',
     linkSource: ''
   },
   project2: {
@@ -30,7 +30,7 @@ const projects = {
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredImage: 'portfolioimgs/Snap2.svg',
     languages: ['html','css','javascript'],
-    linkLive: '',
+    linkLive: 'location.href=\'https://l2oukmane.github.io/Portfolio/index.html\'',
     linkSource: ''
   },
   project3: {
@@ -39,7 +39,7 @@ const projects = {
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredImage: 'portfolioimgs/Snap3.svg',
     languages: ['html','css','javascript'],
-    linkLive: '',
+    linkLive: 'location.href=\'https://l2oukmane.github.io/Portfolio/index.html\'',
     linkSource: ''
   },
   project4: {
@@ -48,7 +48,7 @@ const projects = {
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredImage: 'portfolioimgs/Snap4.svg',
     languages: ['html','css','javascript'],
-    linkLive: '',
+    linkLive: 'location.href=\'https://l2oukmane.github.io/Portfolio/index.html\'',
     linkSource: ''
   },
 }

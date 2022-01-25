@@ -948,7 +948,7 @@ textarea:hover {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background-color: #fff;
-    width: 60%;
+    width: 40%;
     height: 80%;
     padding: 17px 24px;
     z-index: 1;
@@ -985,7 +985,7 @@ textarea:hover {
   }
 
   .project-description p {
-    font-size: 23px;
+    font-size: 29px;
     width: 67%;
   }
 
