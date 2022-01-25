@@ -213,7 +213,6 @@ ul {
 .cards {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 .cards > li {
@@ -585,7 +584,7 @@ textarea:hover {
   color: #fff;
 }
 
-#workProjects img:hover {
+.grid-container img:hover {
   transform: scale(1.4, 1.2);
 }
 
@@ -935,5 +934,104 @@ textarea:hover {
 
   .contact-me button {
     margin-left: 30%;
+  }
+
+  .popUp-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #979493;
+    position: fixed;
+    overflow: scroll;
+    top: 55%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    background-color: #fff;
+    width: 50%;
+    height: 80%;
+    padding: 17px 24px;
+    z-index: 1;
+    border-radius: 16px;
+  }
+
+  .project-description {
+    display: flex;
+  }
+
+  .btn-section {
+    display: flex;
+  }
+
+  .popUp-heading {
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+
+  .popUp-heading h1 {
+    color: #091e42;
+    font-size: 37px;
+  }
+
+  .popUp-heading h3 {
+    margin-top: 0;
+  }
+
+  .projectInfo img {
+    width: 98%;
+    margin: auto;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .project-description p {
+    font-size: 23px;
+    width: 67%;
+  }
+
+  .tools-ul {
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    gap: 10px;
+  }
+
+  .tools li {
+    width: auto;
+    border: 2px solid #ebebff;
+    background-color: #ebebff;
+    background-size: 100%;
+    padding: 7px;
+    border-radius: 16px;
+    font-size: 12px;
+  }
+
+  .btn-section button {
+    border: 2px solid #396df2;
+    background-color: transparent;
+    background-size: 100%;
+    padding-bottom: 10px;
+    padding-top: 8px;
+    border-radius: 10px;
+    width: 130px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #396df2;
+    font-size: 17px;
+    font-weight: normal;
+  }
+
+  .btn-section button:active {
+    background-color: #396df2;
+    color: #fff;
+  }
+
+  .btn-section button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  .btn-section {
+    margin-top: 40%;
   }
 }
