@@ -22,7 +22,7 @@ const projects = {
     featuredImage: 'portfolioimgs/Snap1.svg',
     languages: ['html','css','javascript'],
     linkLive: 'location.href=\'https://l2oukmane.github.io/Portfolio/index.html\'',
-    linkSource: ''
+    linkSource: 'location.href=\'https://github.com/L2oukmane/Portfolio\''
   },
   project2: {
     heading1: 'Multi-Post Stories',
@@ -31,7 +31,7 @@ const projects = {
     featuredImage: 'portfolioimgs/Snap2.svg',
     languages: ['html','css','javascript'],
     linkLive: 'location.href=\'https://l2oukmane.github.io/Portfolio/index.html\'',
-    linkSource: ''
+    linkSource: 'location.href=\'https://github.com/L2oukmane/Portfolio\''
   },
   project3: {
     heading1: 'Tonic',
@@ -40,7 +40,7 @@ const projects = {
     featuredImage: 'portfolioimgs/Snap3.svg',
     languages: ['html','css','javascript'],
     linkLive: 'location.href=\'https://l2oukmane.github.io/Portfolio/index.html\'',
-    linkSource: ''
+    linkSource: 'location.href=\'https://github.com/L2oukmane/Portfolio\''
   },
   project4: {
     heading1: 'Multi-Post Stories',
@@ -49,7 +49,7 @@ const projects = {
     featuredImage: 'portfolioimgs/Snap4.svg',
     languages: ['html','css','javascript'],
     linkLive: 'location.href=\'https://l2oukmane.github.io/Portfolio/index.html\'',
-    linkSource: ''
+    linkSource: 'location.href=\'https://github.com/L2oukmane/Portfolio\''
   },
 }
 function createProjectCards(){
@@ -71,7 +71,7 @@ function projectCards(project,counter){
   workList.innerHTML = `<img class="img1" src="${project.featuredImage}" alt="workSnapshot${counter}">
                         <div class="work-descreption">
                           <h1 class="tonic-class">${project.heading1}</h1>
-                          <div class="canopy">
+                          <div class="canopy canopy-mobile">
                             <h3>${project.heading2[0]}</h3>
                             <ul class="cards">
                               <li class="info">${project.heading2[1]}</li>
@@ -96,11 +96,15 @@ function openClosePopup(){
     x.style.display = 'none';
   } else {
     x.style.display = 'flex';
-  }
+  }  
 }
 function createPopUp(project){
   const title = document.getElementById('heading1');
   title.textContent = project.heading1;
+  const closeImg = document.createElement('img');
+  closeImg.classList.add('close-img');
+  closeImg.setAttribute('src','portfolioimgs/close-black.svg');
+  title.appendChild(closeImg);
   const heading3 = document.getElementById('heading3');
   heading3.textContent = project.heading2[0];
   const cards = document.getElementById('cardsList');
@@ -123,6 +127,12 @@ function createPopUp(project){
     language.appendChild(languageText);
     projectTools.appendChild(language);
   }
+
+  closeImg.addEventListener('click', () => {
+    openClosePopup();
+    createPopUp(projects[`project${counter}`]);
+  });
+
   const liveButton = document.getElementById('live-button');
   liveButton.setAttribute('onclick',project.linkLive);
   const sourceButton = document.getElementById('source-button');
