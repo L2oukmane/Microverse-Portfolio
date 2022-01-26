@@ -17,57 +17,51 @@ document.getElementById('onclick-contact').addEventListener('click', openCloseMe
 const projects = {
   project1: {
     heading1: 'Tonic',
-    heading2: ['Canopy','Back End Dev','2015'],
+    heading2: ['Canopy', 'Back End Dev', '2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredImage: 'portfolioimgs/Snap1.svg',
-    languages: ['html','css','javascript'],
+    languages: ['html', 'css', 'javascript'],
     linkLive: 'location.href=\'https://l2oukmane.github.io/Portfolio/index.html\'',
-    linkSource: 'location.href=\'https://github.com/L2oukmane/Portfolio\''
+    linkSource: 'location.href=\'https://github.com/L2oukmane/Portfolio\'',
   },
   project2: {
     heading1: 'Multi-Post Stories',
-    heading2: ['Canopy','Back End Dev','2015'],
+    heading2: ['Canopy', 'Back End Dev', '2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredImage: 'portfolioimgs/Snap2.svg',
-    languages: ['html','css','javascript'],
+    languages: ['html', 'css', 'javascript'],
     linkLive: 'location.href=\'https://l2oukmane.github.io/Portfolio/index.html\'',
-    linkSource: 'location.href=\'https://github.com/L2oukmane/Portfolio\''
+    linkSource: 'location.href=\'https://github.com/L2oukmane/Portfolio\'',
   },
   project3: {
     heading1: 'Tonic',
-    heading2: ['Canopy','Back End Dev','2015'],
+    heading2: ['Canopy', 'Back End Dev', '2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredImage: 'portfolioimgs/Snap3.svg',
-    languages: ['html','css','javascript'],
+    languages: ['html', 'css', 'javascript'],
     linkLive: 'location.href=\'https://l2oukmane.github.io/Portfolio/index.html\'',
-    linkSource: 'location.href=\'https://github.com/L2oukmane/Portfolio\''
+    linkSource: 'location.href=\'https://github.com/L2oukmane/Portfolio\'',
   },
   project4: {
     heading1: 'Multi-Post Stories',
-    heading2: ['Canopy','Back End Dev','2015'],
+    heading2: ['Canopy', 'Back End Dev', '2015'],
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     featuredImage: 'portfolioimgs/Snap4.svg',
-    languages: ['html','css','javascript'],
+    languages: ['html', 'css', 'javascript'],
     linkLive: 'location.href=\'https://l2oukmane.github.io/Portfolio/index.html\'',
-    linkSource: 'location.href=\'https://github.com/L2oukmane/Portfolio\''
+    linkSource: 'location.href=\'https://github.com/L2oukmane/Portfolio\'',
   },
-}
-function createProjectCards(){
-  let i = 1;
-  for (const project in projects){
-    projectCards(projects[project],i);
-    i++;
-  }
-}
-function projectCards(project,counter){
+};
+
+function projectCards(project, counter) {
   let toolsDiv = '';
-  for (let i=0;i<project.languages.length;i++){
+  for (let i = 0; i < project.languages.length; i++) {
     toolsDiv += `<p>${project.languages[i]}</p>`;
   }
-  let container = document.querySelector('.grid-container');
+  const container = document.querySelector('.grid-container');
   const workList = document.createElement('li');
   workList.classList.add('work');
-  workList.classList.add('work'+counter);
+  workList.classList.add(`work${counter}`);
   workList.innerHTML = `<img class="img1" src="${project.featuredImage}" alt="workSnapshot${counter}">
                         <div class="work-descreption">
                           <h1 class="tonic-class">${project.heading1}</h1>
@@ -90,27 +84,36 @@ function projectCards(project,counter){
   });
   container.appendChild(workList);
 }
-function openClosePopup(){
+
+function createProjectCards() {
+  let i = 1;
+  for (let i=0; i<projects.length;i+=1) {
+    projectCards(projects[project], i);
+    i+=1;
+  }
+}
+
+function openClosePopup() {
   const x = document.querySelector('.popUp-container');
   if (x.style.display === 'flex') {
     x.style.display = 'none';
   } else {
     x.style.display = 'flex';
-  }  
+  }
 }
-function createPopUp(project){
+function createPopUp(project) {
   const title = document.getElementById('heading1');
   title.textContent = project.heading1;
   const closeImg = document.createElement('img');
   closeImg.classList.add('close-img');
-  closeImg.setAttribute('src','portfolioimgs/close-black.svg');
+  closeImg.setAttribute('src', 'portfolioimgs/close-black.svg');
   title.appendChild(closeImg);
   const heading3 = document.getElementById('heading3');
   heading3.textContent = project.heading2[0];
   const cards = document.getElementById('cardsList');
   cards.innerHTML = '';
-  let list1 = document.createElement('li');
-  let list2 = document.createElement('li');
+  const list1 = document.createElement('li');
+  const list2 = document.createElement('li');
   list1.classList.add('info');
   list2.classList.add('info');
   list1.appendChild(document.createTextNode(project.heading2[1]));
@@ -121,7 +124,7 @@ function createPopUp(project){
   description.textContent = project.description;
   const projectTools = document.getElementById('project-tools');
   projectTools.innerHTML = '';
-  for (let i=0;i<project.languages.length;i++){
+  for (let i = 0; i < project.languages.length; i++) {
     const language = document.createElement('p');
     const languageText = document.createTextNode(project.languages[i]);
     language.appendChild(languageText);
@@ -134,12 +137,12 @@ function createPopUp(project){
   });
 
   const liveButton = document.getElementById('live-button');
-  liveButton.setAttribute('onclick',project.linkLive);
+  liveButton.setAttribute('onclick', project.linkLive);
   const sourceButton = document.getElementById('source-button');
-  sourceButton.setAttribute('onclick',project.linkSource);
+  sourceButton.setAttribute('onclick', project.linkSource);
   const popupImage = document.getElementById('popUp-img');
   popupImage.setAttribute('src', project.featuredImage);
 }
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
   createProjectCards();
 });

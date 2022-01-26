@@ -655,7 +655,7 @@ textarea:hover {
 
   .popUp-heading h1 {
     color: #091e42;
-    font-size: auto;
+    font-size: 90%;
   }
 
   #cardsList {
@@ -730,7 +730,7 @@ textarea:hover {
   }
 
   .close-img {
-    height: 30px;
+    height: 70%;
     float: right;
   }
 
@@ -799,7 +799,6 @@ textarea:hover {
     line-height: 30px;
     height: 100px;
     margin-left: 14%;
-
     margin-bottom: 45px;
   }
 
@@ -1078,6 +1077,10 @@ textarea:hover {
 
   .btn-section {
     display: flex;
+    margin-top: 20%;
+    margin-bottom: 15%;
+    margin-left: 8%;
+    gap: 15px;
   }
 
   .popUp-heading {
@@ -1147,13 +1150,6 @@ textarea:hover {
   .btn-section button:active {
     opacity: 0.7;
     cursor: pointer;
-  }
-
-  .btn-section {
-    margin-top: 20%;
-    margin-bottom: 15%;
-    margin-left: 8%;
-    gap: 15px;
   }
 
   .close-img {
