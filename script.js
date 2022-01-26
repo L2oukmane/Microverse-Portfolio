@@ -147,7 +147,7 @@ function projectCards(project, counter) {
   });
   container.appendChild(workList);
 }
-function createProjectCards(projects) {
+function createProjectCards() {
   for (let i = 0; i < projects.length; i += 1) {
     projectCards(projects[i], i);
   }
@@ -157,18 +157,16 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function validateEmail(email,event,errorMsg){
-if(email != email.toLowerCase())
-event.preventDefault();
-const msg = document.getElementById('message');
-msg.innerText = errorMsg;
-msg.style.color='red';
-msg.style.fontSize='15px';
+  if(email != email.toLowerCase()){
+    event.preventDefault();
+    const msg = document.getElementById('message');
+    msg.innerText = errorMsg;
+    msg.style.color='red';
+    msg.style.fontSize='15px';
+  }
 }
 const form = document.getElementById('form');
 form.addEventListener("submit", function (event) {
-	event.preventDefault();
-	let emailValid = validateEmail(form.elements["email"], EMAIL_REQUIRED, EMAIL_INVALID);
-	if (emailValid ) {
-		
-  }
+	const errorMessage = 'Please enter an email address without any upper-case letters.';
+  validateEmail(form.elements["email"].value,event,errorMessage);
   });
