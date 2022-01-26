@@ -37,7 +37,7 @@
           <ul class="desktop-nav-container">
            <li>
              <a id="onclick-close" href="javascript:void(0);">
-              <img class="close-btn" src="portfolioimgs/close.svg" alt="closeButton">
+              <img class="close-btn" id="closeImg" src="portfolioimgs/close.svg" alt="closeButton">
             </a>
             </li>
             <li class="nav-li">
@@ -96,124 +96,32 @@
         </ul>
       </section>
       <section id="workProjects">
-        <ul class="grid-container">
-          <li class="work work1">
-            <img
-              class="img1"
-              src="portfolioimgs/Snap1.svg"
-              alt="work1Snapshot"
-            />
-            <div class="work-descreption">
-            <h1 class="tonic-class">Tonic</h1>
+        <ul class="grid-container"></ul>
+        <div class="popUp-container">
+         <div class="popUp-heading">
+          <div class="work-descreption">
+            <h1 id="heading1" class="tonic-class">H</h1>
             <div class="canopy">
-              <h3>CANOPY</h3>
-              <ul class="cards">
-                <li class="info">Back End Dev</li>
-                <li class="info">2015</li>
-              </ul>
-            </div>
-            <p class="description">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <div class="tools">
-              <p>html</p>
-              <p>css</p>
-              <p>javaScript</p>
-            </div>
-            <div class="view-project">
-              <button type="button">See Project</button>
+              <h3 id="heading3">H</h3>
+              <ul id="cardsList" class="cards"></ul>
             </div>
           </div>
-          </li>
-          <li class="work work2">
-            <img
-              class="img1"
-              src="portfolioimgs/Snap2.svg"
-              alt="work1Snapshot"
-            />
-            <div class="work-descreption">
-            <h1 class="multi">Multi-Post Stories</h1>
-            <div class="canopy">
-              <h3>CANOPY</h3>
-              <ul class="cards">
-                <li class="info">Back End Dev</li>
-                <li class="info">2015</li>
-              </ul>
-            </div>
-            <p class="description">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <div class="tools">
-              <p>html</p>
-              <p>css</p>
-              <p>javaScript</p>
-            </div>
-            <div class="view-project">
-              <button type="button">See Project</button>
-            </div>
-          </div>
-          </li>
-          <li class="work work3">
-            <img
-              class="img1"
-              src="portfolioimgs/Snap3.svg"
-              alt="work1Snapshot"
-            />
-            <div class="work-descreption">
-            <h1 class="tonic-class">Tonic</h1>
-            <div class="canopy">
-              <h3>CANOPY</h3>
-              <ul class="cards">
-                <li class="info">Back End Dev</li>
-                <li class="info">2015</li>
-              </ul>
-            </div>
-            <p class="description">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <div class="tools">
-              <p>html</p>
-              <p>css</p>
-              <p>javaScript</p>
-            </div>
-            <div class="view-project">
-              <button type="button">See Project</button>
-            </div>
-          </div>
-          </li>
-          <li class="work work4">
-            <img
-              class="img1"
-              src="portfolioimgs/Snap4.svg"
-              alt="work1Snapshot"
-            />
-            <div class="work-descreption">
-            <h1 class="multi">Multi-Post Stories</h1>
-            <div class="canopy">
-              <h3>CANOPY</h3>
-              <ul class="cards">
-                <li class="info">Back End Dev</li>
-                <li class="info">2015</li>
-              </ul>
-            </div>
-            <p class="description">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <div class="tools">
-              <p>html</p>
-              <p>css</p>
-              <p>javaScript</p>
-            </div>
-            <div class="view-project">
-              <button type="button">See Project</button>
-            </div>
-          </div>
-          </li>
-        </ul>
+         </div>
+         <div class="projectInfo">
+           <img id="popUp-img" src="portfolioimgs/Snap1.svg" alt="workSnap1">
+           <div class="project-description">
+             <p id="description-text"></p>
+             <div class="projectTools">
+               <ul id="project-tools" class="tools tools-ul"></ul>
+               <div class="btn-section">
+                 <button id="live-button" type="button">See Live</button>  
+                 <button id="source-button" type="button">See source</button>
+               </div>
+             </div>
+           </div>
+         </div>
+
+        </div>
       </section>
       <section id="about-section-id" class="about-section">
         <div class="about">
