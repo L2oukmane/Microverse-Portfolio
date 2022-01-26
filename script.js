@@ -146,3 +146,20 @@ function createPopUp(project) {
 document.addEventListener('DOMContentLoaded', () => {
   createProjectCards();
 });
+
+function validateEmail(email,event,errorMsg){
+if(email != email.toLowerCase())
+event.preventDefault();
+const msg = document.getElementById('message');
+msg.innerText = errorMsg;
+msg.style.color='red';
+msg.style.fontSize='15px';
+}
+const form = document.getElementById('form');
+form.addEventListener("submit", function (event) {
+	event.preventDefault();
+	let emailValid = validateEmail(form.elements["email"], EMAIL_REQUIRED, EMAIL_INVALID);
+	if (emailValid ) {
+		
+  }
+  });
