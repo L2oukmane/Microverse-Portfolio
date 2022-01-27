@@ -172,11 +172,17 @@ form.addEventListener('submit', (event) => {
 });
  
 const contactForm = document.querySelector('.contactForm');
+function formInfo(data){
+const storedData = JSON.stringify(data);
+localStorage.setItem('data', storedData);
+}
+
 contactForm.addEventListener('input', () => {
-const data ={
+const data = {
   name: document.querySelector('.inputName').value,
   email: document.querySelector('.inputEmail').value,
   message:document.querySelector('.inputMessage').value,
-};
+}; 
+formInfo(data);
 
 })
