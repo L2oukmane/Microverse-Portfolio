@@ -167,33 +167,33 @@ form.addEventListener('submit', (event) => {
   const errorMessage = 'Please enter an email address without any upper-case letters.';
   validateEmail(form.elements.email.value, event, errorMessage);
 });
- 
 const contactForm = document.querySelector('.contactForm');
-function formInfo(data){
-const storedData = JSON.stringify(data);
-localStorage.setItem('data', storedData);
+function formInfo(data) {
+  const storedData = JSON.stringify(data);
+  localStorage.setItem('data', storedData);
 }
-function fillData(){
+function fillData() {
   const data = JSON.parse(localStorage.getItem('data'));
-  const name = contactForm.elements.name;
-  const email = contactForm.elements.email;
-  const message = contactForm.elements.message;
+  const { name } = contactForm.elements;
+  const { email } = contactForm.elements;
+  const { message } = contactForm.elements;
   name.value = data.name;
   email.value = data.email;
   message.value = data.message;
 }
 
 contactForm.addEventListener('input', () => {
-const data = {
-  name: document.querySelector('.inputName').value,
-  email: document.querySelector('.inputEmail').value,
-  message:document.querySelector('.inputMessage').value,
-}; 
-formInfo(data);
+  const data = {
+    name: document.querySelector('.inputName').value,
+    email: document.querySelector('.inputEmail').value,
+    message: document.querySelector('.inputMessage').value,
+  };
+  formInfo(data);
 });
 
 document.addEventListener('DOMContentLoaded', () => {
   createProjectCards(Object.values(projects));
-  if (localStorage.getItem('data'))
+  if (localStorage.getItem('data')) {
     fillData();
+  }
 });
