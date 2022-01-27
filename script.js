@@ -152,9 +152,6 @@ function createProjectCards(projects) {
     projectCards(projects[i], i);
   }
 }
-document.addEventListener('DOMContentLoaded', () => {
-  createProjectCards(Object.values(projects));
-});
 
 function validateEmail(email, event, errorMsg) {
   if (email !== email.toLowerCase()) {
@@ -176,6 +173,15 @@ function formInfo(data){
 const storedData = JSON.stringify(data);
 localStorage.setItem('data', storedData);
 }
+function fillData(){
+  const data = JSON.parse(localStorage.getItem('data'));
+  const name = contactForm.elements.name;
+  const email = contactForm.elements.email;
+  const message = contactForm.elements.message;
+  name.value = data.name;
+  email.value = data.email;
+  message.value = data.message;
+}
 
 contactForm.addEventListener('input', () => {
 const data = {
@@ -184,5 +190,10 @@ const data = {
   message:document.querySelector('.inputMessage').value,
 }; 
 formInfo(data);
+});
 
-})
+document.addEventListener('DOMContentLoaded', () => {
+  createProjectCards(Object.values(projects));
+  if (localStorage.getItem('data'))
+    fillData();
+});
