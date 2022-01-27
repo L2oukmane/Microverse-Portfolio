@@ -170,3 +170,13 @@ form.addEventListener('submit', (event) => {
   const errorMessage = 'Please enter an email address without any upper-case letters.';
   validateEmail(form.elements.email.value, event, errorMessage);
 });
+ 
+const contactForm = document.querySelector('.contactForm');
+contactForm.addEventListener('input', () => {
+const data ={
+  name: document.querySelector('.inputName').value,
+  email: document.querySelector('.inputEmail').value,
+  message:document.querySelector('.inputMessage').value,
+};
+
+})
