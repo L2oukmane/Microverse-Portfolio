@@ -787,19 +787,19 @@ textarea:hover {
   .headline1 {
     font-size: 55px;
     line-height: 50px;
-    width: 25%;
+    width: 55%;
     margin-bottom: 15px;
     margin-top: 15%;
     margin-left: 14%;
   }
 
   .text {
-    width: 30%;
+    width: 50%;
     font-size: 23px;
     line-height: 30px;
     height: 100px;
     margin-left: 14%;
-    margin-bottom: 45px;
+    margin-bottom: 3em;
   }
 
   .box {
@@ -814,8 +814,9 @@ textarea:hover {
   }
 
   .desktop-nav-bar {
-    width: 71%;
-    margin-right: auto;
+    width: 30%;
+    height: auto;
+    margin-right: 15%;
   }
 
   .desktop-nav-container {
@@ -823,10 +824,10 @@ textarea:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 40px;
-    margin-top: 2%;
-    margin-left: 30%;
-    padding-left: 130px;
+    width: 20%;
+    margin-top: 6%;
+    margin-left: 10%;
+    padding-left: 50%;
   }
 
   .nav-li {
@@ -835,7 +836,7 @@ textarea:hover {
     font-size: 22px;
     line-height: 20px;
     color: #344563;
-    margin-left: 5em;
+    margin-left: 2em;
   }
 
   .work {
@@ -893,7 +894,7 @@ textarea:hover {
   .about-section {
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: 100%;
     align-items: center;
     justify-content: center;
   }
@@ -903,9 +904,7 @@ textarea:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 70%;
-    height: 350px;
-    margin-left: 14%;
+    width: 50%;
   }
 
   .text2 {
@@ -913,8 +912,8 @@ textarea:hover {
     line-height: 30px;
     align-self: flex-start;
     margin-left: 14%;
-    width: 80%;
-    margin-bottom: 25px;
+    width: 100%;
+    margin-bottom: 95px;
   }
 
   .about h1 {
@@ -922,7 +921,6 @@ textarea:hover {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 55px;
     line-height: 52px;
     margin-left: 13%;
     align-self: flex-start;
@@ -947,6 +945,9 @@ textarea:hover {
 
   .skills-section {
     width: 50%;
+    align-self: flex-end;
+    margin-left: 10%;
+    margin-right: 5%;
   }
 
   .html-css {
@@ -955,7 +956,6 @@ textarea:hover {
     margin-bottom: 30px;
     align-items: center;
     width: 100%;
-    margin-left: 95%;
   }
 
   .js-container {
@@ -1012,20 +1012,30 @@ textarea:hover {
     margin-top: -12px;
   }
 
+  .languages {
+    padding: 0;
+    width: 100%;
+  }
+
   .languages li {
-    width: 200px;
+    width: 100%;
     margin-bottom: 20px;
-    margin-left: 50%;
+  }
+
+  .Frameworks {
+    width: 100%;
   }
 
   .Frameworks li {
     width: 100%;
-    margin-left: 50%;
+  }
+
+  .Skills {
+    width: 100%;
   }
 
   .Skills li {
     width: 100%;
-    margin-left: 50%;
   }
 
   .contact-me {
